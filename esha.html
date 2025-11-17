@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reliable cab service in Madurai. 10 years experience. Local & outstation trips. Book now: +91 82485 84137">
+    <title>ESHA Travels - Cab & Tourist Service in Pasumalai, Madurai</title>
+    <style>
+        /* Mobile-first CSS - Minimal and optimized */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1e40af;
+            --success-color: #25d366;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --white: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .header-image {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto 1.5rem;
+            display: block;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        header .subheadline {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+
+        /* CTA Buttons */
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-height: 44px;
+            min-width: 44px;
+        }
+
+        .btn:focus {
+            outline: 3px solid rgba(37, 99, 235, 0.5);
+            outline-offset: 2px;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--success-color);
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover,
+        .btn-whatsapp:focus {
+            background-color: #20ba5a;
+            transform: translateY(-2px);
+        }
+
+        .btn-call {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        .btn-call:hover,
+        .btn-call:focus {
+            background-color: var(--bg-light);
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        section {
+            padding: 2.5rem 1rem;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Services */
+        .services-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .service-type {
+            margin-bottom: 2rem;
+        }
+
+        .service-type h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-list li {
+            padding: 0.75rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .service-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        .service-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Outstation Routes Grid */
+        .routes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .route-item {
+            display: block;
+            background-color: var(--white);
+            padding: 0.75rem;
+            border-radius: 0.375rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            cursor: pointer;
+        }
+
+        .route-item:hover,
+        .route-item:focus {
+            background-color: var(--bg-light);
+        }
+
+        /* About Driver */
+        .about-driver {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .driver-info {
+            margin-top: 1rem;
+        }
+
+        .driver-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Fleet */
+        .fleet-content {
+            text-align: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .fleet-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .fleet-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            display: block;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .fleet-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Pricing */
+        .pricing-card {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .pricing-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .pricing-item:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-label {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .pricing-value {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .pricing-note {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--primary-color);
+            font-size: 0.9rem;
+            text-align: center;
+            color: var(--text-light);
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.375rem;
+            font-family: inherit;
+            min-height: 44px;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.875rem;
+            font-size: 1rem;
+        }
+
+        .btn-submit:hover,
+        .btn-submit:focus {
+            background-color: var(--primary-dark);
+        }
+
+        /* Contact Info */
+        .contact-info {
+            max-width: 600px;
+            margin: 2rem auto 0;
+            text-align: center;
+        }
+
+        .contact-item {
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+        }
+
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-item a:hover,
+        .contact-item a:focus {
+            text-decoration: underline;
+        }
+
+        .operating-hours {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        footer .privacy-note {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.25rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            header {
+                padding: 3rem 1rem;
+            }
+
+            .header-image {
+                max-width: 250px;
+                margin-bottom: 2rem;
+            }
+
+            header .subheadline {
+                font-size: 1.125rem;
+            }
+
+            .cta-buttons {
+                flex-direction: row;
+                justify-content: center;
+                max-width: 500px;
+            }
+
+            .btn {
+                flex: 1;
+                max-width: 240px;
+            }
+
+            section {
+                padding: 3.5rem 1rem;
+            }
+
+            .routes-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 1rem;
+            }
+
+            .service-types {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+
+            .fleet-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                padding: 0 2rem;
+            }
+
+            section {
+                padding: 4rem 1rem;
+            }
+
+            .fleet-gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Accessibility - Skip to main content */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header / Hero Section -->
+    <header>
+        <div class="container">
+            <h1>ESHA Travels - Your Trusted Travel Partner in Madurai</h1>
+            <p class="subheadline">Professional cab service with 10 years of driving experience</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/918248584137?text=Hello%20ESHA%20Travels%20—%20I%20want%20to%20book%20a%20trip." 
+                   class="btn btn-whatsapp" 
+                   aria-label="Book on WhatsApp">
+                    Book on WhatsApp
+                </a>
+                <a href="tel:+918248584137" 
+                   class="btn btn-call">
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Services Section -->
+        <section id="services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section-title">Our Services</h2>
+                <p class="services-intro">
+                    Looking for reliable transportation in and around Madurai? ESHA Travels offers professional cab services for all your travel needs. Whether you need a quick ride across the city or a comfortable journey to popular destinations, we've got you covered with safe, punctual, and affordable service.
+                </p>
+                
+                <div class="service-types">
+                    <div class="service-type">
+                        <h3>Local Cab Service (Madurai City)</h3>
+                        <ul class="service-list">
+                            <li>Airport Pickup/Drop - On-time service to and from Madurai Airport</li>
+                            <li>Railway Station Pickup - Convenient pickup from Madurai Junction and other stations</li>
+                            <li>Shopping/Hospital Trips - Reliable transportation for your daily needs</li>
+                            <li>Family Rides - Safe and comfortable rides for families around the city</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-type">
+                        <h3>Outstation Trips</h3>
+                        <p>Popular destinations from Madurai:</p>
+                        <div class="routes-grid">
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Rameswaram.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Rameswaram trip">
+                                Madurai → Rameswaram
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Kodaikanal.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Kodaikanal trip">
+                                Madurai → Kodaikanal
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Ooty.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Ooty trip">
+                                Madurai → Ooty
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Tiruchendur.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Tiruchendur trip">
+                                Madurai → Tiruchendur
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Kanyakumari.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Kanyakumari trip">
+                                Madurai → Kanyakumari
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Trivandrum.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Trivandrum trip">
+                                Madurai → Trivandrum
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Munnar%20or%20Thekkady.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Munnar or Thekkady trip">
+                                Madurai → Munnar / Thekkady
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Kochi.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Kochi trip">
+                                Madurai → Kochi
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Chennai.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Chennai trip">
+                                Madurai → Chennai
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Theni.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Theni trip">
+                                Madurai → Theni
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Virudunagar.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Virudunagar trip">
+                                Madurai → Virudunagar
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Thoothukudi.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Thoothukudi trip">
+                                Madurai → Thoothukudi
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Tiruchirapalli.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Tiruchirapalli trip">
+                                Madurai → Tiruchirapalli
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Erode.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Erode trip">
+                                Madurai → Erode
+                            </a>
+                            <a class="route-item"
+                               href="https://wa.me/918248584137?text=Hi%2C%20I%20want%20to%20book%20a%20trip%20from%20Madurai%20to%20Salem.%20Please%20share%20trip%20expenses%20and%20package%20details."
+                               aria-label="WhatsApp booking for Madurai to Salem trip">
+                                Madurai → Salem
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Driver Section -->
+        <section id="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">About Our Driver</h2>
+                <div class="about-driver">
+                    <h3>Mathan kumar. P</h3>
+                    <div class="driver-info">
+                        <p><strong>Experience:</strong> 10 years driving experience</p>
+                        <p><strong>Languages:</strong> Tamil (Fluent), English (Conversational), Hindi (Basic)</p>
+                        <p>Meet Mathan kumar. P, your experienced driver with 10 years of driving experience. Fluent in Tamil, conversational in English, and with basic Hindi skills, Mathan ensures clear communication and a comfortable journey for all passengers. Trust ESHA Travels for professional, courteous, and safe transportation services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fleet Section -->
+        <section id="fleet" aria-labelledby="fleet-title">
+            <div class="container">
+                <h2 id="fleet-title" class="section-title">Our Fleet</h2>
+                <div class="fleet-content">
+                    <p><strong>Toyota Etios</strong> - A reliable and comfortable sedan perfect for city drives and long-distance trips. Well-maintained and equipped for your comfort and safety.</p>
+                    <p>Based on customer strength, we also provide other vehicles for comfortable rides. Contact us to discuss the best vehicle option for your group size and travel needs.</p>
+                    
+                    <div class="fleet-gallery">
+                        <img src="images/etios-exterior-1.jpg.png" 
+                             alt="Toyota Etios silver sedan front and left side view parked in Pasumalai, Madurai — ESHA Travels car with license plate TN30BB1447" 
+                             class="fleet-image" 
+                             loading="lazy">
+                        <img src="images/etios-exterior-2.jpg.png" 
+                             alt="Toyota Etios silver sedan rear and right side view showing license plate TN30BB1447 — ESHA Travels car" 
+                             class="fleet-image" 
+                             loading="lazy">
+                        <img src="images/tempo-traveller.jpg" 
+                             alt="White Force Tempo Traveller front view at night, suitable for group travel with ESHA Travels" 
+                             class="fleet-image" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <h2 id="pricing-title" class="section-title">Pricing</h2>
+                <div class="pricing-card">
+                    <div class="pricing-item">
+                        <span class="pricing-label">Per km rate:</span>
+                        <span class="pricing-value">₹13 / km</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="pricing-label">Driver Bata:</span>
+                        <span class="pricing-value">₹300</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="pricing-label">Toll charges:</span>
+                        <span class="pricing-value">Extra (customer pays)</span>
+                    </div>
+                    <p class="pricing-note">
+                        Trip/package charges based on kilometres — contact us to know more.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Booking Section -->
+        <section id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Book Your Trip</h2>
+                
+                <form class="contact-form" id="booking-form" aria-label="Booking form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required aria-required="true" pattern="[0-9]{10,15}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trip-type">Trip Type *</label>
+                        <select id="trip-type" name="trip-type" required aria-required="true">
+                            <option value="">Select trip type</option>
+                            <option value="local-airport">Local - Airport Pickup/Drop</option>
+                            <option value="local-railway">Local - Railway Station</option>
+                            <option value="local-shopping">Local - Shopping/Hospital</option>
+                            <option value="local-family">Local - Family Ride</option>
+                            <option value="outstation-rameswaram">Outstation - Rameswaram</option>
+                            <option value="outstation-kodaikanal">Outstation - Kodaikanal</option>
+                            <option value="outstation-ooty">Outstation - Ooty</option>
+                            <option value="outstation-tiruchendur">Outstation - Tiruchendur</option>
+                            <option value="outstation-kanyakumari">Outstation - Kanyakumari</option>
+                            <option value="outstation-trivandrum">Outstation - Trivandrum</option>
+                            <option value="outstation-munnar">Outstation - Munnar/Thekkady</option>
+                            <option value="outstation-kochi">Outstation - Kochi</option>
+                            <option value="outstation-chennai">Outstation - Chennai</option>
+                            <option value="outstation-other">Outstation - Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trip-date">Preferred Date</label>
+                        <input type="date" id="trip-date" name="trip-date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message / Additional Details</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Send Booking Request</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Phone / WhatsApp:</strong><br>
+                        <a href="tel:+918248584137">+91 82485 84137</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong><br>
+                        <a href="mailto:mathan45579@gmail.com">mathan45579@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong><br>
+                        Pasumalai, Madurai-04
+                    </div>
+                    <div class="operating-hours">
+                        <strong>Operating Hours:</strong> 6:00 AM - 10:00 PM (Daily)
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 ESHA Travels. All rights reserved.</p>
+            <p>Pasumalai, Madurai-04 | +91 82485 84137</p>
+            <p class="privacy-note">
+                Privacy Note: We respect your privacy. Your contact information is used solely for booking purposes and will not be shared with third parties.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handler - creates mailto link with form data
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const tripType = document.getElementById('trip-type').value;
+            const tripDate = document.getElementById('trip-date').value;
+            const message = document.getElementById('message').value;
+            
+            // Build email subject
+            const subject = encodeURIComponent('Booking Request - ESHA Travels');
+            
+            // Build email body
+            let body = 'Hello ESHA Travels,\n\n';
+            body += 'I would like to book a trip:\n\n';
+            body += 'Name: ' + name + '\n';
+            body += 'Phone: ' + phone + '\n';
+            if (email) body += 'Email: ' + email + '\n';
+            body += 'Trip Type: ' + tripType + '\n';
+            if (tripDate) body += 'Preferred Date: ' + tripDate + '\n';
+            if (message) body += '\nMessage: ' + message + '\n';
+            body += '\nPlease contact me to confirm the booking.\n\nThank you!';
+            
+            body = encodeURIComponent(body);
+            
+            // Create mailto link
+            const mailtoLink = 'mailto:mathan45579@gmail.com?subject=' + subject + '&body=' + body;
+            
+            // Open mailto link
+            window.location.href = mailtoLink;
+            
+            // Show confirmation message
+            alert('Your booking request is being prepared. Your email client will open with the details. If it doesn\'t open, please email us at mathan45579@gmail.com with your booking details.');
+        });
+    </script>
+</body>
+</html>
+
